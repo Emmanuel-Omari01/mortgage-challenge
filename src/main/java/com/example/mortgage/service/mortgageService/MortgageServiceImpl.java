@@ -2,6 +2,9 @@ package com.example.mortgage.service.mortgageService;
 
 import org.springframework.stereotype.Service;
 
+/**
+ * Implementation of the MortgageService interface for performing mortgage calculations.
+ */
 @Service
 public class MortgageServiceImpl implements MortgageService {
   private static final int MONTHS_PER_YEAR = 12;
