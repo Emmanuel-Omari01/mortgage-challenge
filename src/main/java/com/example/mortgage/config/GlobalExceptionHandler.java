@@ -23,4 +23,6 @@ public class GlobalExceptionHandler {
       NotFoundException e, HttpServletRequest httpServletRequest) {
     return new ErrorHandlingDto(e.getMessage(), httpServletRequest.getRequestURI());
   }
+
+
 }

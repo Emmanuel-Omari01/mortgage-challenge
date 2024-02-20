@@ -1,18 +1,16 @@
 package com.example.mortgage.service.mortgageService;
 
+import com.example.mortgage.view.responseDto.LoanDto;
+
 /** Interface for performing mortgage calculations. */
 public interface MortgageService {
   /**
    * Calculates the monthly mortgage payment based on the loan amount, annual interest rate, and
    * loan duration.
-   *
-   * @param loanAmount The amount of the loan.
-   * @param annualInterestRate The annual interest rate.
-   * @param loanDurationYears The loan duration in years.
    * @return The calculated monthly mortgage payment.
    */
   double calculateMonthlyPayment(
-      double loanAmount, double annualInterestRate, int loanDurationYears);
+          LoanDto loanDto);
 
   /**
    * Calculates the total payment over the entire loan duration based on the monthly payment and loan duration.

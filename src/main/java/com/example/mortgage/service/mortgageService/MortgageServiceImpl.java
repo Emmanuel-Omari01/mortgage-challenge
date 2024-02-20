@@ -1,5 +1,6 @@
 package com.example.mortgage.service.mortgageService;
 
+import com.example.mortgage.view.responseDto.LoanDto;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,14 +11,14 @@ public class MortgageServiceImpl implements MortgageService {
   private static final int MONTHS_PER_YEAR = 12;
   @Override
   public double calculateMonthlyPayment(
-      double loanAmount, double annualInterestRate, int loanDurationYears) {
+          LoanDto loanDto) {
     double monthlyInterestRate =
-        annualInterestRate / MONTHS_PER_YEAR / 100; // Convert annual interest rate to monthly
-    int numberOfPayments = loanDurationYears * MONTHS_PER_YEAR;
+        loanDto.getInterestRate() / MONTHS_PER_YEAR / 100; // Convert annual interest rate to monthly
+    int numberOfPayments = loanDto.getLoanDuration() * MONTHS_PER_YEAR;
 
     // Calculate monthly payment using the formula for a fixed-rate mortgage
     double monthlyPayment =
-        loanAmount
+        loanDto.getLoanAmount()
             * monthlyInterestRate
             / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
 
