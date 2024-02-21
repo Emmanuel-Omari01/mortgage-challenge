@@ -22,13 +22,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v3
-        with:
-          java-version: '21'
-    
-      - name: Build Maven project
-        run: mvn clean package -DskipTests
 
   Deploy-Application:
     runs-on: ubuntu-latest
