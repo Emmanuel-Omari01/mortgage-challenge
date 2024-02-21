@@ -36,4 +36,4 @@ jobs:
           script: |
             docker pull ${{ secrets.DOCKER_IMAGE}}
             docker rm -f mega-api
-            docker run -p 8080:80 --name mega-api --restart=on-failure -d ${{ secrets.DOCKER_IMAGE }}
+            docker run -p 8080:8080 --name mega-api --restart=on-failure -d ${{ secrets.DOCKER_IMAGE }}
