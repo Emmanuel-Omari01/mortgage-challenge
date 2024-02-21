@@ -35,5 +35,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             docker pull ${{ secrets.DOCKER_IMAGE}}
-            docker rm -f ${{ secrets.DOCKER_IMAGE}}
+            docker rmi -f ${{ secrets.DOCKER_IMAGE}}
             docker run -p 8080:8080 --name ${{ secrets.DOCKER_IMAGE}} --restart=on-failure -d ${{ secrets.DOCKER_IMAGE }}
