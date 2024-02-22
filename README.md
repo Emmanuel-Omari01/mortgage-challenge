@@ -28,6 +28,8 @@ Mortgage Calculator application that allows users to calculate mortgage payments
     - Provided clear and comprehensive documentation with openApi [here](http://ec2-51-20-140-242.eu-north-1.compute.amazonaws.com:8080/swagger-ui/index.html)
 - **Hosting:**
     - Link to hosted api on aws [here](http://ec2-51-20-140-242.eu-north-1.compute.amazonaws.com:8080/)
+- **Pipeline:**
+    - Implemented a CI/CD pipeline to automate the build and deployment process with Docker, github actions and AWS.
   
 
 
