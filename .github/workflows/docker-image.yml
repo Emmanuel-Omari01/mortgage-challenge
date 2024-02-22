@@ -35,4 +35,4 @@ jobs:
           script: |
             docker pull ${{ secrets.DOCKER_IMAGE}}
             docker rm -f mortgage
-            docker run -p 8080:80 --name mortgage --restart=on-failure -d ${{ secrets.DOCKER_IMAGE }}
+            docker run -p 8080:8080 --name mortgage --restart=on-failure -d ${{ secrets.DOCKER_IMAGE }}
