@@ -1,0 +1,17 @@
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/service/mortgageService/LoanComparisonService.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/view/responseDto/LoanDto.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/view/LoanRequestDto.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/controller/MortgageController.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/config/GlobalExceptionHandler.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/model/Mortgage.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/model/PaymentFrequency.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/config/OpenApiConfig.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/MortgageApplication.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/view/responseDto/ErrorHandlingDto.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/model/LoanType.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/exceptions/DuplicateException.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/view/responseDto/CompareLoansDto.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/service/mortgageService/MortgageServiceImpl.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/service/mortgageService/MortgageService.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/model/Loan.java
+/home/kwabena/Documents/Amalitech/mortgage/src/main/java/com/example/mortgage/exceptions/NotFoundException.java
