@@ -2,8 +2,24 @@ FROM openjdk:21-jdk-slim AS build
 
 WORKDIR /app
 
-COPY target/mortgage-0.0.1-SNAPSHOT.jar mortgage.jar
+COPY .mvn .mvn
+COPY mvnw .
+
+COPY pom.xml .
+
+RUN chmod +x mvnw
+
+RUN ./mvnw dependency:go-offline
+
+COPY src src
+
+RUN ./mvnw package -DskipTests
+
+
+FROM openjdk:21-jdk-slim
+
+COPY --from=build /app/target/*.jar app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "mortgage.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
